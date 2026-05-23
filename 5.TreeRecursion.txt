@@ -1,0 +1,38 @@
+Linear Recursion
+----------------
+
+fun(n){
+  if(n>0)
+   {
+      fun(n-1);
+   }
+}
+
+
+
+Tree Recursion
+--------------
+
+fun(n)
+{
+    if(n>0)
+    {
+         fun();
+
+         fun();
+
+    }
+
+}
+
+void display(int n)
+{
+      if(n==0)
+    	 return;
+      printf("%d ",n);             //1
+      display(n-1);               //2
+      display(n-1);               //3
+    		
+}
+
+display(3);
